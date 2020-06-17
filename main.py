@@ -35,19 +35,6 @@ def crossover(table):#tabelaSele
             #novaLinhaTabela.y(int(novaLinhaTabela.obterCromossomo()[3:7], 2)) 7
             tabela.append(novaLinhaTabela)
 
-
-def mutacao(table):#tabela
-    min = 0
-    max = 1
-    for i in range(0,5):
-        posGene = random.randint(0,5)
-        linhaIndividuo = random.randint(min,max+1)
-        print("Linha: ",linhaIndividuo)
-        print("Gene: ",posGene)
-        #table[random.randint(min,max)].obterCromossomo()
-        min = min+2
-        max = max+2
-
 def mutation(table):
     cromossomos = []
     posMin = 0
